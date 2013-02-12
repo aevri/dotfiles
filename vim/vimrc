@@ -1,0 +1,7 @@
+filetype off
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+filetype plugin indent on
+set tabstop=4
+set shiftwidth=4
+set expandtab
