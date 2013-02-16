@@ -10,3 +10,6 @@
 [submodule "vim/vimdir/bundle/syntastic"]
 	path = vim/vimdir/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "vim/vimdir/bundle/powerline"]
+	path = vim/vimdir/bundle/powerline
+	url = https://github.com/Lokaltog/vim-powerline
