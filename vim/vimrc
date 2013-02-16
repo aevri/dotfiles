@@ -55,3 +55,6 @@ set smartcase
 set nobackup
 set nowritebackup
 set noswapfile
+
+" Tagbar
+nmap <Leader>t :TagbarToggle<CR>

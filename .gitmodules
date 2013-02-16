@@ -16,3 +16,6 @@
 [submodule "vim/vimdir/bundle/python-mode"]
 	path = vim/vimdir/bundle/python-mode
 	url = https://github.com/klen/python-mode
+[submodule "vim/vimdir/bundle/tagbar"]
+	path = vim/vimdir/bundle/tagbar
+	url = https://github.com/majutsushi/tagbar
