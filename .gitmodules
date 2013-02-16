@@ -22,3 +22,6 @@
 [submodule "vim/vimdir/bundle/unimpaired"]
 	path = vim/vimdir/bundle/unimpaired
 	url = https://github.com/tpope/vim-unimpaired
+[submodule "vim/vimdir/bundle/repeat"]
+	path = vim/vimdir/bundle/repeat
+	url = https://github.com/tpope/vim-repeat
