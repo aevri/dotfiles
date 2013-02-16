@@ -7,3 +7,6 @@
 [submodule "vim/vimdir/bundle/surround"]
 	path = vim/vimdir/bundle/surround
 	url = https://github.com/tpope/vim-surround
+[submodule "vim/vimdir/bundle/syntastic"]
+	path = vim/vimdir/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
