@@ -9,20 +9,21 @@ let mapleader=","
 au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
 
-" powerline
+"" powerline
 let g:Powerline_symbols = 'unicode'
 set nocompatible   " Disable vi-compatibility
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs
 
-" solarized
+"" solarized
 syntax enable
 if has('gui_running')
     set background=light
     colorscheme solarized
 endif
 
-" ctrlp
+"" ctrlp
+" <Ctrl>p - start searching
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc     " MacOSX/Linux
 "set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
 let g:ctrlp_custom_ignore = {
@@ -31,32 +32,35 @@ let g:ctrlp_custom_ignore = {
   \ 'link': 'some_bad_symbolic_links',
   \ }
 
-" python-mode
+"" python-mode
+" <Ctrl>c rr    - rename
+" <Ctrl><Space> - autocomplete
+" <Leader>r     - run python file
 let g:pymode_folding = 0
 
-" anticipate mistakes
+"" anticipate mistakes
 set history=700
 set undolevels=700
 
-" tabs not spaces
+"" tabs not spaces
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set shiftround
 set expandtab
 
-" Make search case insensitive
+"" Make search case insensitive
 set hlsearch
 set incsearch
 set ignorecase
 set smartcase
 
-" Disable backup and swap files - they leave a mess
+"" Disable backup and swap files - they leave a mess
 set nobackup
 set nowritebackup
 set noswapfile
 
-" Tagbar
+"" Tagbar
 nmap <Leader>t :TagbarToggle<CR>
 
 "" unimpaired
