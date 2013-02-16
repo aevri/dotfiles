@@ -19,3 +19,6 @@
 [submodule "vim/vimdir/bundle/tagbar"]
 	path = vim/vimdir/bundle/tagbar
 	url = https://github.com/majutsushi/tagbar
+[submodule "vim/vimdir/bundle/unimpaired"]
+	path = vim/vimdir/bundle/unimpaired
+	url = https://github.com/tpope/vim-unimpaired

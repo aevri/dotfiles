@@ -58,3 +58,9 @@ set noswapfile
 
 " Tagbar
 nmap <Leader>t :TagbarToggle<CR>
+
+"" unimpaired
+" [<Space> - insert space above line
+" <Space>] - insert space above line
+" [e       - exchange with line above
+" ]e       - exchange with line below
