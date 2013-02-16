@@ -13,3 +13,6 @@
 [submodule "vim/vimdir/bundle/powerline"]
 	path = vim/vimdir/bundle/powerline
 	url = https://github.com/Lokaltog/vim-powerline
+[submodule "vim/vimdir/bundle/vim-colors-solarized"]
+	path = vim/vimdir/bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized

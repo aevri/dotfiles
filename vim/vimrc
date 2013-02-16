@@ -16,3 +16,10 @@ let g:Powerline_symbols = 'unicode'
 set nocompatible   " Disable vi-compatibility
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs
+
+" solarized
+syntax enable
+if has('gui_running')
+    set background=light
+    colorscheme solarized
+endif
