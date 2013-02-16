@@ -68,3 +68,8 @@ nmap <Leader>t :TagbarToggle<CR>
 " <Space>] - insert space above line
 " [e       - exchange with line above
 " ]e       - exchange with line below
+
+"" tcomment
+" https://github.com/tomtom/tcomment_vim
+" gcc - comment current line
+" visual mode selection + gc - toggle comments for the tcurrent selection
