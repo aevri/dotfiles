@@ -16,3 +16,6 @@
 [submodule "vim/vimdir/bundle/vim-colors-solarized"]
 	path = vim/vimdir/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized
+[submodule "vim/vimdir/bundle/ctrlp"]
+	path = vim/vimdir/bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim
