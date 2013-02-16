@@ -33,3 +33,25 @@ let g:ctrlp_custom_ignore = {
 
 " python-mode
 let g:pymode_folding = 0
+
+" anticipate mistakes
+set history=700
+set undolevels=700
+
+" tabs not spaces
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set shiftround
+set expandtab
+
+" Make search case insensitive
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+" Disable backup and swap files - they leave a mess
+set nobackup
+set nowritebackup
+set noswapfile
