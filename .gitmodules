@@ -28,3 +28,6 @@
 [submodule "vim/vimdir/bundle/tcomment"]
 	path = vim/vimdir/bundle/tcomment
 	url = https://github.com/tomtom/tcomment_vim
+[submodule "vim/vimdir/bundle/ultisnips"]
+	path = vim/vimdir/bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips

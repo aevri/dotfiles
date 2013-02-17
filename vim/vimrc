@@ -73,3 +73,11 @@ nmap <Leader>t :TagbarToggle<CR>
 " https://github.com/tomtom/tcomment_vim
 " gcc - comment current line
 " visual mode selection + gc - toggle comments for the tcurrent selection
+
+"" ultisnips
+" https://github.com/SirVer/ultisnips
+" #!<tab> - insert python shebang and encoding
+" class<tab> - insert class with docstring
+" def<tab> - insert method with docstring
+" <ctrl>j - move to next field
+" <ctrl>k - move to previous field
