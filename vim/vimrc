@@ -18,7 +18,7 @@ set encoding=utf-8 " Necessary to show Unicode glyphs
 "" solarized
 syntax enable
 if has('gui_running')
-    set background=light
+    set background=dark
     colorscheme solarized
 endif
 
