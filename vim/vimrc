@@ -49,6 +49,9 @@ set shiftwidth=4
 set shiftround
 set expandtab
 
+"" 80 char
+set cc=80
+
 "" Make search case insensitive
 set hlsearch
 set incsearch
