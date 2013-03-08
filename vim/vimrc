@@ -21,6 +21,8 @@ if has('gui_running')
     set background=dark
     colorscheme solarized
 endif
+let g:solarized_hitrail = 1
+let g:solarized_visibility = "high"
 
 "" ctrlp
 " <Ctrl>p - start searching
@@ -49,8 +51,9 @@ set shiftwidth=4
 set shiftround
 set expandtab
 
-"" 80 char
+"" 80 char, show tabs, trailing chars and extenders
 set cc=80
+set list listchars=tab:»·,trail:·,extends:¶
 
 "" Make search case insensitive
 set hlsearch
