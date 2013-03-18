@@ -15,7 +15,7 @@
 	url = http://github.com/kien/ctrlp.vim
 [submodule "vim/vimdir/bundle/python-mode"]
 	path = vim/vimdir/bundle/python-mode
-	url = http://github.com/andviro/python-mode
+	url = http://github.com/klen/python-mode
 [submodule "vim/vimdir/bundle/tagbar"]
 	path = vim/vimdir/bundle/tagbar
 	url = http://github.com/majutsushi/tagbar
