@@ -36,6 +36,8 @@ let g:ctrlp_custom_ignore = {
 let g:ctrlp_extensions = ['tag', 'buffertag', 'mixed']
 nmap <A-P> :CtrlPTag<CR>
 nmap <A-p> :CtrlPBufTag<CR>
+nmap <A-o> :CtrlPBuffer<CR>
+nmap <A-O> :CtrlPMRU<CR>
 
 "" python-mode
 " <Ctrl>c rr    - rename
