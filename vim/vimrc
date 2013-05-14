@@ -94,3 +94,4 @@ nmap <Leader>t :TagbarToggle<CR>
 " rwprop<tab> - insert read-write property
 " <ctrl>j - move to next field
 " <ctrl>k - move to previous field
+let g:UltiSnipsSnippetsDir = "~/.vim/UltiSnips/"
