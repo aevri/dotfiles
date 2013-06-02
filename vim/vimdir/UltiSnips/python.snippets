@@ -1,3 +1,12 @@
+snippet __init__ "empty constructor with baseclass"
+def __init__(self):
+    super($1, self).__init__()
+endsnippet
+
+snippet super "superclass init"
+super($1, self).__init__()
+endsnippet
+
 snippet testsuite "Python Test Suite"
 """Test suite for ${1:`!p snip.rv = fn[:fn.find("__t")]`}"""
 
