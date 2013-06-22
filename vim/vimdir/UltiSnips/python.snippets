@@ -9,11 +9,6 @@ endsnippet
 
 snippet testsuite "Python Test Suite"
 """Test suite for ${1:`!p snip.rv = fn[:fn.find("__t")]`}"""
-
-import unittest
-
-import $1
-
 #==============================================================================
 #                                   TEST PLAN
 #------------------------------------------------------------------------------
@@ -26,6 +21,10 @@ import $1
 # Tests:
 # [ A] test_A_Breathing
 #==============================================================================
+
+import unittest
+
+import $1
 
 
 class Test(unittest.TestCase):
