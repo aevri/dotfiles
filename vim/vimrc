@@ -9,6 +9,9 @@ let mapleader=","
 au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
 
+set path=** " recursively search in subdirs to match files
+set suffixesadd=.py " 'gf' can now try to open from import statements
+
 "" powerline
 let g:Powerline_symbols = 'unicode'
 set nocompatible   " Disable vi-compatibility
