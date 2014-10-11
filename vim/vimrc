@@ -98,3 +98,6 @@ nmap <Leader>t :TagbarToggle<CR>
 " <ctrl>j - move to next field
 " <ctrl>k - move to previous field
 let g:UltiSnipsSnippetsDir = "~/.vim/UltiSnips/"
+
+" make it possible to use the dot operator on visual line selections
+xnoremap . :norm.<CR>
