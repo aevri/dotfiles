@@ -23,6 +23,9 @@ syntax enable
 if has('gui_running')
     set background=dark
     colorscheme solarized
+else
+    " this looks much better in a solarized dark terminal
+    highlight ColorColumn ctermbg=0
 endif
 let g:solarized_hitrail = 1
 let g:solarized_visibility = "high"
