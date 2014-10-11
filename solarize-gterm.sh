@@ -2,7 +2,7 @@ set -e
 sudo apt-get install python-gconf
 git clone http://github.com/sigurdga/gnome-terminal-colors-solarized.git ../gnome-terminal-colors-solarized
 cd ../gnome-terminal-colors-solarized
-./solarize
+./install.sh
 
 # To Uninstall:
 #
