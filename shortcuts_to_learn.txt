@@ -1,0 +1,18 @@
+Bash:
+
+<CTRL-a>  # beginning of line
+<CTRL-e>  # end of line
+<ALT-b>   # back one word
+<ALT-f>   # forward one word
+<CTRL-xx> # toggle between cursor pos and beginning of line
+<CTRL-u>  # cut before the cursor to beginning of line
+<CTRL-k>  # cut after the cursor to end of line
+<CTRL-w>  # cut the word before the cursor
+<ALT-d>   # cut the word after the cursor
+<CTRL-xe> # edit the current line with $EDITOR and execute result on exit
+
+Source: http://ss64.com/bash/syntax-keyboard.html
+
+GNU Screen:
+
+<CTRL-ad> # detach the current screen from the terminal
