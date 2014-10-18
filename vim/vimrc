@@ -104,3 +104,7 @@ let g:UltiSnipsSnippetsDir = "~/.vim/UltiSnips/"
 
 " make it possible to use the dot operator on visual line selections
 xnoremap . :norm.<CR>
+
+" go fullscreen in gvim with F11
+map <silent> <F11>
+\    :call system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")<CR>
