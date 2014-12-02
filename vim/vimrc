@@ -40,10 +40,10 @@ let g:ctrlp_custom_ignore = {
   \ 'link': 'some_bad_symbolic_links',
   \ }
 let g:ctrlp_extensions = ['tag', 'buffertag', 'mixed']
-nmap <A-P> :CtrlPTag<CR>
-nmap <A-p> :CtrlPBufTag<CR>
-nmap <A-o> :CtrlPBuffer<CR>
-nmap <A-O> :CtrlPMRU<CR>
+nmap <Leader>P :CtrlPTag<CR>
+nmap <Leader>p :CtrlPBufTag<CR>
+nmap <Leader>o :CtrlPBuffer<CR>
+nmap <Leader>O :CtrlPMRU<CR>
 
 "" python-mode
 " <Ctrl>c rr    - rename
