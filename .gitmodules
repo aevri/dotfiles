@@ -37,3 +37,6 @@
 [submodule "vim/vimdir/bundle/vim-commentary"]
 	path = vim/vimdir/bundle/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
+[submodule "vim/vimdir/bundle/vim-snippets"]
+	path = vim/vimdir/bundle/vim-snippets
+	url = https://github.com/honza/vim-snippets.git
