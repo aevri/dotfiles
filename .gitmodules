@@ -25,9 +25,6 @@
 [submodule "vim/vimdir/bundle/repeat"]
 	path = vim/vimdir/bundle/repeat
 	url = http://github.com/tpope/vim-repeat
-[submodule "vim/vimdir/bundle/tcomment"]
-	path = vim/vimdir/bundle/tcomment
-	url = http://github.com/tomtom/tcomment_vim
 [submodule "vim/vimdir/bundle/ultisnips"]
 	path = vim/vimdir/bundle/ultisnips
 	url = http://github.com/SirVer/ultisnips
