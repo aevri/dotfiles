@@ -119,3 +119,12 @@ map <silent> <F11>
 " Fugitive
 " make sure that the quickfix window opens after any grep
 autocmd QuickFixCmdPost *grep* cwindow
+
+" Surround
+" from https://github.com/tpope/vim-surround, how to surround a visual
+" selection with a tag:
+"
+"       Finally, let's try out visual mode.
+"       Press a capital V (for linewise visual mode)
+"       followed by S<p class="important">
+"
