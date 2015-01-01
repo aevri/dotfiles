@@ -91,10 +91,12 @@ nmap <Leader>t :TagbarToggle<CR>
 " [e       - exchange with line above
 " ]e       - exchange with line below
 
-"" tcomment
-" https://github.com/tomtom/tcomment_vim
+"" vim-commentary
 " gcc - comment current line
 " visual mode selection + gc - toggle comments for the tcurrent selection
+
+" make the join command understand comments and join them intelligently
+set formatoptions+=j
 
 "" ultisnips
 " https://github.com/SirVer/ultisnips
