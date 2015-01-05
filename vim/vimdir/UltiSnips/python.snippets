@@ -3,6 +3,14 @@ def __init__(self):
     super($1, self).__init__()
 endsnippet
 
+snippet add_arg "add argparse argument"
+parser.add_argument(
+	'--${1:name}',
+	type=${2:str},
+	default=None,
+	help="${3:Help}.")
+endsnippet
+
 snippet super "superclass init"
 super($1, self).__init__()
 endsnippet
