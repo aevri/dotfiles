@@ -55,6 +55,7 @@ nmap <Leader>O :CtrlPMRU<CR>
 " <Ctrl><Space> - autocomplete
 " <Leader>r     - run python file
 let g:pymode_folding = 0
+let g:pymode_rope_complete_on_dot = 0
 
 "" anticipate mistakes
 set history=700
