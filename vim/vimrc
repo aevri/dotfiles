@@ -95,8 +95,22 @@ nmap <Leader>t :TagbarToggle<CR>
 " gcc - comment current line
 " visual mode selection + gc - toggle comments for the tcurrent selection
 
+" :set formatoptions (default "tcq")
+"      t - textwidth
+"      c - comments (plus leader -- see :help comments)
+"      q - allogw 'gq' to work
+"      n - numbered lists
+"      2 - keep second line indent
+"      1 - single letter words on next line
+"      r - (in mail) comment leader after
+
 " make the join command understand comments and join them intelligently
 set formatoptions+=j
+
+" keep second line's indent, great for e.g. multi-line TODO comments
+" TODO: blah blah
+"       blah blah
+set formatoptions+=2
 
 "" ultisnips
 " https://github.com/SirVer/ultisnips
