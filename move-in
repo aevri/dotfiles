@@ -3,3 +3,4 @@ git submodule init
 git submodule update
 ln -s ~/dotfiles/vim/vimrc ~/.vimrc
 ln -s ~/dotfiles/vim/vimdir ~/.vim
+./bash/fzf/install
