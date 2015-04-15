@@ -43,3 +43,6 @@
 [submodule "bash/fzf"]
 	path = bash/fzf
 	url = https://github.com/junegunn/fzf.git
+[submodule "vim/vimdir/bundle/tabular"]
+	path = vim/vimdir/bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
