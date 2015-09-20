@@ -6,6 +6,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 let mapleader=","
+set backspace=indent,eol,start
 au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
 
