@@ -46,3 +46,6 @@
 [submodule "vim/vimdir/bundle/tabular"]
 	path = vim/vimdir/bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
+[submodule "vim/vimdir/bundle/vimroom"]
+	path = vim/vimdir/bundle/vimroom
+	url = https://github.com/mikewest/vimroom
