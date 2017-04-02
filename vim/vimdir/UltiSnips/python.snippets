@@ -101,6 +101,51 @@ class Test(unittest.TestCase):
 # ------------------------------ END-OF-FILE ----------------------------------
 endsnippet
 
+snippet pytool
+#! /usr/bin/env python3
+"""A tool to $1.
+
+---
+
+Usage examples:
+
+    $ tool arg
+    output
+
+"""
+
+import argparse
+import logging
+import sys
+
+
+def main():
+    doc = __doc__.split('---')
+    parser = argparse.ArgumentParser(
+            formatter_class=argparse.RawDescriptionHelpFormatter,
+            description=doc[0],
+            epilog=doc[1])
+    parser.add_argument('--verbose', '-v', action='count', default=0)
+    args = parser.parse_args()
+    setup_logging(args.verbose)
+
+    $2
+    logging.warning('Not implemented')
+    return 1
+
+
+def setup_logging(verbosity):
+    logtypes = [logging.WARNING, logging.INFO, logging.DEBUG]
+    level = min(len(logtypes) - 1, verbosity)
+    logging.basicConfig(
+        level=logtypes[level],
+        format='%(levelname)s: %(message)s')
+
+
+if __name__ == '__main__':
+    sys.exit(main())
+endsnippet
+
 # from main python.snippets
 
 ##########
