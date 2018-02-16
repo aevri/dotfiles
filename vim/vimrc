@@ -153,3 +153,8 @@ autocmd QuickFixCmdPost *grep* cwindow
 " Workaround Powerline incompatability:
 " https://github.com/mikewest/vimroom/issues/34
 let g:vimroom_sidebar_height=0
+
+" BuildStream files are yaml.
+augroup filetypedetect
+    au BufRead,BufNewFile *.bst set filetype=yaml
+augroup END
