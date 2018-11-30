@@ -46,3 +46,6 @@
 [submodule "vim/vimdir/bundle/vimroom"]
 	path = vim/vimdir/bundle/vimroom
 	url = https://github.com/mikewest/vimroom
+[submodule "git/diff-so-fancy"]
+	path = git/diff-so-fancy
+	url = https://github.com/so-fancy/diff-so-fancy
