@@ -24,9 +24,7 @@ syntax enable
 if $TERM == 'xterm-256color'
     let g:solarized_termcolors=16
 endif
-if $COLORTERM == 'gnome-terminal'
-    set t_Co=256
-endif
+set t_Co=256
 if has('gui_running')
     set background=dark
     colorscheme solarized
@@ -42,6 +40,12 @@ endif
 if $TERMCOLORSCHEME == 'black'
     colorscheme default
 endif
+" if $BACKGROUND == 'light'
+"     set background=light
+" endif
+" if $ITERM_PROFILE=='Default light'
+"     set background=light
+" endif
 let g:solarized_hitrail = 1
 let g:solarized_visibility = "high"
 
