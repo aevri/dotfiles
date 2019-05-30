@@ -3,6 +3,25 @@ def __init__(self):
     super($1, self).__init__()
 endsnippet
 
+snippet pv
+print(f"$1: {$1}")
+endsnippet
+
+snippet sa
+self._$1 = $1
+endsnippet
+
+snippet timer
+import contextlib
+import time
+@contextlib.contextmanager
+def timer(message):
+	then = time.time()
+	yield
+	now = time.time()
+	print(f"({now - then:,.2}s):", message)
+endsnippet
+
 snippet add_arg "add argparse argument"
 parser.add_argument(
 	'--${1:name}',
