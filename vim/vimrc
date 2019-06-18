@@ -64,9 +64,9 @@ endif
 " if $BACKGROUND == 'light'
 "     set background=light
 " endif
-" if $ITERM_PROFILE=='Default light'
-"     set background=light
-" endif
+if $ITERM_PROFILE=='Default light'
+    set background=light
+endif
 let g:solarized_hitrail = 1
 let g:solarized_visibility = "high"
 
