@@ -91,6 +91,7 @@ nmap <Leader>O :CtrlPMRU<CR>
 " <Leader>r     - run python file
 let g:pymode_folding = 0
 let g:pymode_rope_complete_on_dot = 0
+let g:pymode_rope = 1
 
 "" anticipate mistakes
 set history=700
