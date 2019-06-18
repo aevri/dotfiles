@@ -15,6 +15,8 @@ Plug 'tpope/vim-unimpaired'
 Plug 'junegunn/goyo.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
+Plug 'machakann/vim-swap'
+Plug 'mbbill/undotree'
 
 " Initialize plugin system
 call plug#end()
