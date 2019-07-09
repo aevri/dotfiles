@@ -14,9 +14,11 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'junegunn/goyo.vim'
 Plug 'vim-airline/vim-airline'
-Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
+" Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plug 'machakann/vim-swap'
 Plug 'mbbill/undotree'
+Plug 'scrooloose/syntastic'
+Plug 'honza/vim-snippets'
 
 " Initialize plugin system
 call plug#end()
@@ -89,9 +91,20 @@ nmap <Leader>O :CtrlPMRU<CR>
 " <Ctrl>c rr    - rename
 " <Ctrl><Space> - autocomplete
 " <Leader>r     - run python file
-let g:pymode_folding = 0
-let g:pymode_rope_complete_on_dot = 0
-let g:pymode_rope = 1
+" let g:pymode_folding = 0
+" let g:pymode_rope_complete_on_dot = 0
+" let g:pymode_rope = 1
+" let g:pymode_lint_on_write = 0
+
+"" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 2
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
 
 "" anticipate mistakes
 set history=700
@@ -184,7 +197,11 @@ autocmd QuickFixCmdPost *grep* cwindow
 "
 " Workaround Powerline incompatability:
 " https://github.com/mikewest/vimroom/issues/34
-let g:vimroom_sidebar_height=0
+" let g:vimroom_sidebar_height=0
+
+" Goyo
+"
+nmap <Leader>g :Goyo<CR>
 
 " BuildStream files are yaml.
 augroup filetypedetect
