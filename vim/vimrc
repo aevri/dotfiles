@@ -6,7 +6,11 @@ call plug#begin('~/.vim/plugged')
 Plug 'SirVer/ultisnips'
 Plug 'airblade/vim-gitgutter'
 Plug 'altercation/vim-colors-solarized'
-Plug 'ctrlpvim/ctrlp.vim'
+
+" Plug 'ctrlpvim/ctrlp.vim'
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
+
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
@@ -74,18 +78,26 @@ let g:solarized_visibility = "high"
 
 "" ctrlp
 " <Ctrl>p - start searching
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc     " MacOSX/Linux
+" set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc     " MacOSX/Linux
 "set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll)$',
-  \ 'link': 'some_bad_symbolic_links',
-  \ }
-let g:ctrlp_extensions = ['tag', 'buffertag', 'mixed']
-nmap <Leader>P :CtrlPTag<CR>
-nmap <Leader>p :CtrlPBufTag<CR>
-nmap <Leader>o :CtrlPBuffer<CR>
-nmap <Leader>O :CtrlPMRU<CR>
+" let g:ctrlp_custom_ignore = {
+"   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+"   \ 'file': '\v\.(exe|so|dll)$',
+"   \ 'link': 'some_bad_symbolic_links',
+"   \ }
+" let g:ctrlp_extensions = ['tag', 'buffertag', 'mixed']
+" nmap <Leader>P :CtrlPTag<CR>
+" nmap <Leader>p :CtrlPBufTag<CR>
+" nmap <Leader>o :CtrlPBuffer<CR>
+" nmap <Leader>O :CtrlPMRU<CR>
+
+nnoremap <C-p> :<C-u>FZF<CR>
+nnoremap <Leader>p :BTags<CR>
+nnoremap <Leader>P :Tags<CR>
+nnoremap <Leader>o :Buffers<CR>
+nnoremap <Leader>O :History<CR>
+nnoremap <Leader>i :BLines<CR>
+nnoremap <Leader>I :Lines<CR>
 
 "" python-mode
 " <Ctrl>c rr    - rename
