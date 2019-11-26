@@ -1,0 +1,12 @@
+Make sure to install ropevim as a Python module in the user context, e.g.
+
+    pip3 install ~/.vim/plugged/ropevim/ --user
+
+You can check that the module is available in the context of Vim like so:
+
+    :python3 << EOF
+    :import ropevim
+    :EOF
+
+If there's no error from the above, and 'ropevim_prefer_py3' is non-zero, then
+it should work.
