@@ -15,3 +15,4 @@ git config --global alias.pushfl 'push --force --force-with-lease'
 git config --global alias.addp '!git -c interactive.diffFilter="/usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less -FRX --tabs=4" add -p'
 git config --global alias.fshow '!git -c interactive.diffFilter="/usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less -FRX --tabs=4" show $@'
 git config --global alias.fdiff '!git -c interactive.diffFilter="/usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less -FRX --tabs=4" diff $@'
+git config --global alias.blackenrebase '!git rebase $@ -X theirs --exec '"'"'git diff-tree --no-commit-id --name-only -r @ | xargs black && git commit --amend -a --no-edit'"'"
