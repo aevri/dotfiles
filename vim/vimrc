@@ -24,6 +24,7 @@ Plug 'mbbill/undotree'
 Plug 'scrooloose/syntastic'
 Plug 'honza/vim-snippets'
 Plug 'python-rope/ropevim'
+Plug 'psf/black'
 
 " Initialize plugin system
 call plug#end()
@@ -224,3 +225,6 @@ nmap <Leader>g :Goyo<CR>
 augroup filetypedetect
     au BufRead,BufNewFile *.bst set filetype=yaml
 augroup END
+
+let g:black_linelength=79
+nnoremap <Leader>b :Black<CR>
