@@ -24,7 +24,12 @@ Plug 'mbbill/undotree'
 Plug 'scrooloose/syntastic'
 Plug 'honza/vim-snippets'
 Plug 'python-rope/ropevim'
-Plug 'psf/black'
+
+" Note, may need to workaround repo and plugin being at different versions.
+"
+"   See: https://github.com/psf/black/issues/1293
+"
+Plug 'psf/black', { 'tag': '19.10b0' }
 
 " Initialize plugin system
 call plug#end()
