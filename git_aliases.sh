@@ -17,3 +17,5 @@ git config --global alias.fshow '!git -c interactive.diffFilter="/usr/local/shar
 git config --global alias.fdiff '!git -c interactive.diffFilter="/usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less -FRX --tabs=4" diff $@'
 git config --global alias.blackenrebase '!f() { git rebase $@ -X theirs --exec '"'"'git diff-tree --no-commit-id --name-only -r @ | xargs black -l 79 && git commit --amend -a --no-edit'"'"'; }; f'
 git config --global alias.ssync '! s3sync fetch $(git config --get sars.archivepath).git.tar.gpg && git linky sync --verbose --no-config-ok && sars push -O && s3sync push $(git config --get sars.archivepath).git.tar.gpg'
+git config --global alias.sfetch '! s3sync fetch $(git config --get sars.archivepath).git.tar.gpg && git linky sync --verbose --no-config-ok && sars fetch'
+git config --global alias.sfetchnh '! s3sync fetch --no-hash $(git config --get sars.archivepath).git.tar.gpg && git linky sync --verbose --no-config-ok && sars fetch'
